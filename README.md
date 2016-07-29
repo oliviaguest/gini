@@ -17,7 +17,7 @@ The Gini coefficient is very close to 1.0:
 0.99890010998900103
 ```
 
-For uniformly distributed random numbers, will be low, around 0.33:
+For uniformly distributed random numbers, it will be low, around 0.33:
 
 ```
 >>> s = np.random.uniform(-1,0,1000)
