@@ -2,8 +2,8 @@
 Calculate the Gini coefficient of a numpy array.
 
 The function in ```gini.py``` is based on the third equation from [here](http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm), which defines the Gini coefficient as:
-![    G = \dfrac{ \sum_{i=1}^{n} (2i - n - 1) x_i}{n  \sum_{i=1}^{n} x_i}
-](https://github.com/oliviaguest/gini/raw/master/gini.png "Gini equation")
+
+![G = \dfrac{ \sum_{i=1}^{n} (2i - n - 1) x_i}{n  \sum_{i=1}^{n} x_i}](https://github.com/oliviaguest/gini/raw/master/gini.png "Gini equation")
 
 
 ##Examples
