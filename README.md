@@ -30,3 +30,6 @@ For uniformly distributed random numbers, it will be low, around 0.33:
 0.3295183767105907
 ```
 
+##Notes
+It is faster than [pysal.inequality.gini](http://pysal.readthedocs.io/en/latest/_modules/pysal/inequality/gini.html) and answers are indistinguishable before approximately 6 decimal places (i.e., they are the same arithmetically for all intents and purposes).
+Other Gini coefficient functions found online do not produce equivalent results, hence why I wrote this.
