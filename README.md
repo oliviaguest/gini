@@ -12,7 +12,7 @@ For a very unequal sample, 999 zeros and a single one:
 ```
 >>> from gini import *
 >>> a = np.zeros((1000))
->>>  a[0] = 1.0
+>>> a[0] = 1.0
 ```
 
 The Gini coefficient is very close to 1.0:
