@@ -2,8 +2,6 @@
 Calculate the Gini coefficient of a numpy array.
 
 ##Examples
-
-
 For a very unequal sample, 999 zeros and a single one:
 
 ```
@@ -19,4 +17,11 @@ The Gini coefficient is very close to 1.0:
 0.99890010998900103
 ```
 
-For uniformly distributed random numbers:
+For uniformly distributed random numbers, will be low, around 0.33:
+
+```
+>>> s = np.random.uniform(-1,0,1000)
+>>> gini(s)
+0.3295183767105907
+```
+
