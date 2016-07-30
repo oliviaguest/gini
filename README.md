@@ -1,4 +1,6 @@
 # gini
+A Gini coefficient calculator in Python.
+
 ##Overview
 Calculate the Gini coefficient of a numpy array. Gini coefficients are often used to quantify income inequality, read more [here](http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm).
 
