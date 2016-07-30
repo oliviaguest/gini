@@ -29,7 +29,7 @@ For uniformly distributed random numbers, it will be low, around 0.33:
 ```
 
 ##Input Assumptions
-The Gini calculation by definition requires non-zero positive (ascending-order) sorted values within a 1d vector. This is dealt with within ```gini()```. So these four assumptions can be violated, as they controlled for:
+The Gini calculation by definition requires non-zero positive (ascending-order) sorted values within a 1d vector. This is dealt with within ```gini()``` (see: https://github.com/oliviaguest/gini/blob/master/gini.py). So these four assumptions can be violated, as they are controlled for:
 ```python
 def gini(array):
     """Calculate the Gini coefficient of a numpy array."""
@@ -46,5 +46,6 @@ def gini(array):
 ```
 
 ##Notes
-It is faster than [pysal.inequality.gini](http://pysal.readthedocs.io/en/latest/_modules/pysal/inequality/gini.html) and answers are indistinguishable before approximately 6 decimal places (i.e., they are the same arithmetically for all intents and purposes).
+It is faster than [pysal.inequality.gini](http://pysal.readthedocs.io/en/latest/_modules/pysal/inequality/gini.html) and outputs are indistinguishable before approximately 6 decimal places. In other words, the two function are arithmetically identical. 
+
 Other Gini coefficient functions found online do not produce equivalent results, hence why I wrote this.
