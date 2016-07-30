@@ -29,7 +29,7 @@ For uniformly distributed random numbers, it will be low, around 0.33:
 ```
 
 ##Input Assumptions
-The Gini calculation by definition requires non-zero positive (ascending-order) sorted values within a 1d vector. This is dealt with within ```gini()``` (see: https://github.com/oliviaguest/gini/blob/master/gini.py). So these four assumptions can be violated, as they are controlled for:
+The Gini calculation by definition requires non-zero positive (ascending-order) sorted values within a 1d vector. This is dealt with within [```gini()```](https://github.com/oliviaguest/gini/blob/master/gini.py). So these four assumptions can be violated, as they are controlled for:
 ```python
 def gini(array):
     """Calculate the Gini coefficient of a numpy array."""
