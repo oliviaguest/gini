@@ -16,7 +16,6 @@ For a very unequal sample, 999 zeros and a single one:
 >>> a = np.zeros((1000))
 >>> a[0] = 1.0
 ```
-
 The Gini coefficient is very close to 1.0:
 ```
 >>> gini(a)
@@ -28,6 +27,16 @@ For uniformly distributed random numbers, it will be low, around 0.33:
 >>> s = np.random.uniform(-1,0,1000)
 >>> gini(s)
 0.3295183767105907
+```
+
+For a homogeneous sample:
+```
+>>> b = np.ones((1000))
+```
+The Gini coefficient is 0.0:
+```
+>>> gini(b)
+0.0
 ```
 
 ##Input Assumptions
