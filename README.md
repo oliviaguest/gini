@@ -29,12 +29,9 @@ For uniformly distributed random numbers, it will be low, around 0.33:
 0.3295183767105907
 ```
 
-For a homogeneous sample:
+For a homogeneous sample, the Gini coefficient is 0.0:
 ```
 >>> b = np.ones((1000))
-```
-The Gini coefficient is 0.0:
-```
 >>> gini(b)
 0.0
 ```
