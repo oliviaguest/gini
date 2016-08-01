@@ -48,7 +48,7 @@ def gini(array):
 ```
 
 ##Notes
-* It is significantly faster than (the current implementation of) PySAL's Gini coefficient function (see  [pysal.inequality.gini](http://pysal.readthedocs.io/en/latest/_modules/pysal/inequality/gini.html)) and outputs are indistinguishable before approximately 6 decimal places. In other words, the two function are arithmetically identical.
+* It is significantly faster than (the [current implementation of](https://github.com/pysal/pysal/issues/855)) PySAL's Gini coefficient function (see  [pysal.inequality.gini](http://pysal.readthedocs.io/en/latest/_modules/pysal/inequality/gini.html)) and outputs are indistinguishable before approximately 6 decimal places. In other words, the two function are arithmetically identical.
 
 * It is slightly faster than the [Gini coefficient function by David on Ellipsix](http://www.ellipsix.net/blog/2012/11/the-gini-coefficient-for-distribution-inequality.html).
 
