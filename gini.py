@@ -2,7 +2,7 @@ import numpy as np
 
 def gini(array):
     """Calculate the Gini coefficient of a numpy array."""
-    # based on bottom eq: http://www.statsdirect.com/help/content/image/stat0206_wmf.gif
+    # based on bottom eq: http://www.statsdirect.com/help/generatedimages/equations/equation154.svg
     # from: http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm
     array = array.flatten() #all values are treated equally, arrays must be 1d
     if np.amin(array) < 0:
