@@ -11,26 +11,26 @@ The function in ```gini.py``` is based on the third equation from [here](http://
 
 ## Examples
 For a very unequal sample, 999 zeros and a single one,
-{% highlight bash %}
+{% highlight python %}
 >>> from gini import *
 >>> a = np.zeros((1000))
 >>> a[0] = 1.0
 {% endhighlight %}
 the Gini coefficient is very close to 1.0:
-{% highlight bash %}
+{% highlight python %}
 >>> gini(a)
 0.99890010998900103
 {% endhighlight %}
 
 For uniformly distributed random numbers, it will be low, around 0.33:
-{% highlight bash %}
+{% highlight python %}
 >>> s = np.random.uniform(-1,0,1000)
 >>> gini(s)
 0.3295183767105907
 {% endhighlight %}
 
 For a homogeneous sample, the Gini coefficient is 0.0:
-{% highlight bash %}
+{% highlight python %}
 >>> b = np.ones((1000))
 >>> gini(b)
 0.0
