@@ -10,17 +10,17 @@ The function in ```gini.py``` is based on the third equation from [here](http://
 
 
 ## Examples
-For a very unequal sample, 999 zeros and a single one:
-```
+For a very unequal sample, 999 zeros and a single one,
+{% highlight bash %}
 >>> from gini import *
 >>> a = np.zeros((1000))
 >>> a[0] = 1.0
-```
-The Gini coefficient is very close to 1.0:
-```
+{% endhighlight %}
+the Gini coefficient is very close to 1.0:
+{% highlight bash %}
 >>> gini(a)
 0.99890010998900103
-```
+{% endhighlight %}
 
 For uniformly distributed random numbers, it will be low, around 0.33:
 ```
