@@ -1,7 +1,7 @@
 # gini
 A Gini coefficient calculator in Python.
 
-##Overview
+## Overview
 This is a function that calculates the Gini coefficient of a numpy array. Gini coefficients are often used to quantify income inequality, read more [here](http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm).
 
 The function in ```gini.py``` is based on the third equation from [here](http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm), which defines the Gini coefficient as:
@@ -9,7 +9,7 @@ The function in ```gini.py``` is based on the third equation from [here](http://
 ![G = \dfrac{ \sum_{i=1}^{n} (2i - n - 1) x_i}{n  \sum_{i=1}^{n} x_i}](https://github.com/oliviaguest/gini/raw/master/gini.png "Gini equation")
 
 
-##Examples
+## Examples
 For a very unequal sample, 999 zeros and a single one:
 ```
 >>> from gini import *
@@ -36,7 +36,7 @@ For a homogeneous sample, the Gini coefficient is 0.0:
 0.0
 ```
 
-##Input Assumptions
+## Input Assumptions
 The Gini calculation by definition requires non-zero positive (ascending-order) sorted values within a 1d vector. This is dealt with within [```gini()```](https://github.com/oliviaguest/gini/blob/master/gini.py). So these four assumptions can be violated, as they are controlled for:
 ```python
 def gini(array):
@@ -53,7 +53,7 @@ def gini(array):
     return ((np.sum((2 * index - n  - 1) * array)) / (n * np.sum(array))) #Gini coefficient
 ```
 
-##Notes
+## Notes
 * It is significantly faster than (the [current implementation of](https://github.com/pysal/pysal/issues/855)) PySAL's Gini coefficient function (see  [pysal.inequality.gini](http://pysal.readthedocs.io/en/latest/_modules/pysal/inequality/gini.html)) and outputs are indistinguishable before approximately 6 decimal places. In other words, the two functions are arithmetically identical.
 
 * It is slightly faster than the [Gini coefficient function by David on Ellipsix](http://www.ellipsix.net/blog/2012/11/the-gini-coefficient-for-distribution-inequality.html).
