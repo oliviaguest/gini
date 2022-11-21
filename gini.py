@@ -12,7 +12,7 @@ def gini(array):
         # Values cannot be negative:
         array -= np.amin(array)
     # Values cannot be 0:
-    array += 0.0000001
+    array = array + 0.0000001
     # Values must be sorted:
     array = np.sort(array)
     # Index per array element:
