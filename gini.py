@@ -8,6 +8,7 @@ def gini(array):
     # http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm
     # All values are treated equally, arrays must be 1d:
     array = array.flatten()
+    array = array.astype(float)  # int to float
     if np.amin(array) < 0:
         # Values cannot be negative:
         array -= np.amin(array)
